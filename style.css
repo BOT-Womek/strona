@@ -83,3 +83,31 @@
     padding: 10px; /* Adjust padding for smaller screens */
   }
 }
+/* Basic Styles */
+.container {
+  display: flex; /* Enable Flexbox layout */
+  flex-wrap: wrap; /* Allow wrapping of columns */
+  justify-content: space-between; /* Distribute columns evenly */
+  margin: 250px;
+  align-items: center; /* Align items vertically in the container */
+}
+
+.row {
+  display: flex; /* Enable Flexbox layout for rows */
+  justify-content: space-between; /* Distribute columns evenly */
+  margin-bottom: 40px;
+}
+
+.column {
+  width: 100px; /* Equal width for each column */
+  padding: 100px;
+  border: 1px solid #ccc;
+  text-align: center; /* Align text horizontally within each column */
+}
+
+/* Responsive Design (Optional) */
+@media (max-width: 768px) {
+  .column {
+    flex: 100%; /* Make each column full width on small screens */
+  }
+}
